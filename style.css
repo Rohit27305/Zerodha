@@ -17,6 +17,44 @@ body{
     justify-content: space-between;
     border-bottom: 1px solid rgba(128, 128, 128, 0.226);
 }
+.ham{
+    cursor: pointer;
+}
+.hamclick{
+    position: relative;
+}
+.tablet{
+    display: none;
+}
+.tablet a{
+    width: 45%;
+}
+
+.kites{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.kites > div{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.down{
+    display: flex;
+    padding: 0 30px;
+    background-color: rgb(241, 241, 241);
+}
+.down div{
+    width: 30%;
+}
+.down div :first-child{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #424242;
+}
 
 .right{
     width: 50%;
@@ -190,6 +228,7 @@ body{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 .foot{
     display: flex;
@@ -257,6 +296,18 @@ button{
         padding: 0px 500px;
     }
 }
+@media (min-width: 900px) {
+    .hamclick{
+        display: none;
+        width: 50%;
+        position: absolute;
+        margin: 0 120px;
+        right: 0;
+        border: 1px solid rgba(128, 128, 128, 0.356);
+        background-color: white;
+        border-radius: 5px;
+    }
+}
 @media (min-width: 320px) and (max-width: 900px) {
     .ttt{
         flex-direction: column;
@@ -293,9 +344,32 @@ button{
     .last{
         margin: 40px ;
     }
+    .cross{
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
     .right{
         width: auto;
     }
+    .tablet{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        row-gap: 20px;
+        padding: 20px 40px;
+    }
+    .hamclick{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.356);
+        background-color: white;
+        border-radius: 5px;
+    }
+    
 }
 @media (max-width: 425px) {
     .tt a{
