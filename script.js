@@ -6,7 +6,7 @@ hm.addEventListener("click" , function(){
         hm.src = "./ZStore/cross.svg";
         item.style.display = 'block';
     }else{
-        hm.src = "./ZStore/Hamburger.svg";
+        hm.src = "./ZStore/HamBurger.svg";
         item.style.display = 'none';
     } 
 });
@@ -17,7 +17,7 @@ close.addEventListener("click" , function(){
         hm.src = "./ZStore/cross.svg";
         item.style.display = 'block';
     }else{
-        hm.src = "./ZStore/Hamburger.svg";
+        hm.src = "./ZStore/HamBurger.svg";
         item.style.display = 'none';
     } 
 })
